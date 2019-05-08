@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home.page";
 
 const Router = props => {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Home} />
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
     </BrowserRouter>
   );
 };
